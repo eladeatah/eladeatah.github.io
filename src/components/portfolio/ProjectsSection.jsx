@@ -9,7 +9,7 @@ const PROJECTS = [
   title: "Cryo-EM 3D Reconstruction",
   category: "Research · Dihedral-Symmetric Molecules",
   efficiency: "<1° Angular Error",
-  image: "assets/cryo_em_images.png",
+  image: "/assets/cryo_em_images.png",
   link: "https://github.com/PrincetonUniversity/aspire",
   desc: "Novel 3D-reconstruction technique using Cryo-EM images of dihedral-symmetric molecules."
 },
@@ -25,7 +25,7 @@ const PROJECTS = [
   title: "Human Mesh Generation",
   category: "Generative AI · VAE & Diffusion",
   efficiency: "Real-Time Inference",
-  image: "assets/smpl-vae-architecture.png",
+  image: "/assets/smpl-vae-architecture.png",
   link: "#",
   desc: "VAE and diffusion models for generating human meshes in various poses."
 },
