@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { motion } from "framer-motion";
 import { Github, Linkedin } from "lucide-react";
+import LegalFooter from "@/components/portfolio/LegalFooter";
 
 export default function ContactSection() {
   const [email, setEmail] = useState("");
@@ -63,7 +64,7 @@ export default function ContactSection() {
           </form>
 
           <div className="mt-8 font-mono text-[11px] text-white/30">
-            <p>$ direct: <a href="mailto:eladeatah@gmail.com" className="text-cobalt hover:underline">eladeatah@gmail.com</a></p>
+            <p>$ direct: <a href="mailto:eladeatah@gmail.com" className="text-cobalt hover:underline" aria-label="Email Elad Eatah">eladeatah@gmail.com</a></p>
             <p>$ location: Petah Tikva, Israel</p>
           </div>
         </motion.div>
@@ -75,6 +76,7 @@ export default function ContactSection() {
               href="https://github.com/eladeatah"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="GitHub profile"
               className="text-white/40 hover:text-cobalt transition-colors"
             >
               <Github size={20} />
@@ -83,6 +85,7 @@ export default function ContactSection() {
               href="https://linkedin.com/in/elad-eatah-1b56b9186/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="LinkedIn profile"
               className="text-white/40 hover:text-cobalt transition-colors"
             >
               <Linkedin size={20} />
@@ -92,6 +95,8 @@ export default function ContactSection() {
             © {new Date().getFullYear()} Elad Eatah — Engineered with precision
           </p>
         </div>
+
+        <LegalFooter />
       </div>
     </section>
   );
